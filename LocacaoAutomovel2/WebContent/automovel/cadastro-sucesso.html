@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://localhost:8080/LocacaoAutomovel2/bootstrap/css/bootstrap.min.css">
+
+<script src="http://localhost:8080/LocacaoAutomovel2/scripts/jquery-1.11.3.min.js"></script>
+<script src="http://localhost:8080/LocacaoAutomovel2/scripts/navegacao.js"></script>
+<script src="http://localhost:8080/LocacaoAutomovel2/bootstrap/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://localhost:8080/LocacaoAutomovel2/css/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:8080/LocacaoAutomovel2/css/sidebar.css">
+<title>BEG</title>
+</head>
+<body>
+	
+	<!-- Carrega os itens de navegacao e menu em comum -->
+	<div id="barraTopo"></div>
+	<div id="menu"></div>
+	<span id="top-link-block" class="volta-topo">
+    	<a href="#topo" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'fast');return false;">
+        	<span class="glyphicon glyphicon-chevron-up"></span>
+    	</a>
+	</span>
+	<div class='cobre-pagina'></div>
+	
+	<script>
+		setBarraTopo();
+		setMenu();
+		
+		$(document).ready(function(){
+	    	$("#menu-toggle").click(function() {
+	        	$("#wrapper").toggleClass("toggled");
+	        	$("body").toggleClass("pagina-coberta");
+	        	$(".cobre-pagina").css("opacity", 0.6).fadeToggle("slow");	        		        	
+	    	});        	
+		});
+	</script>
+    <!-- Fim da navegacao em comum -->
+    
+    <div class="container">
+    
+    	<div class="col-md-12">
+    		<div class="jumbotron jumb-sucesso">
+    			<h3><span class="glyphicon glyphicon-ok"></span> Automóvel cadastrado com sucesso</h3>
+    			<p>Ele está na garagem esperando para ser alugado!</p>
+    		</div>    		
+    	</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function teste(a)
+		{
+			var opcoes = document.getElementsByName("opcao");
+			var i = 0;
+			var achou = false;
+			
+			while(i < opcoes.length && !achou)
+			{
+				if(opcoes[i].value == a)
+				{
+					opcoes[i].selected = true;
+					achou = true;
+				}
+				i++;	
+			}
+		
+		}
+		
+		function teste2(opcao)
+		{
+			document.getElementById(opcao).selected = true;
+		}
+		
+		function oi()
+		{
+			alert("vsf");
+		}
+		
+		oi();
+	</script>
+	
+	<select>
+		<option name="opcao" id="o1" value="1">1</option>
+		<option name="opcao" id="o2" value="2">2</option>
+		<option name="opcao" id="o3" value="3" selected>3</option>
+		<option name="opcao" id="o4" value="4">4</option>
+		<option name="opcao" id="o5" value="5">5</option>
+		<option name="opcao" id="o6" value="6">6</option>
+	</select>
+	<button type="button" onclick="teste('5')">Testar</button>
+	<button type="button" onclick="teste2('o2')">Testar 2</button>
+</body>
+</html>
