@@ -13,14 +13,15 @@
         android:id="@+id/LBNomeCidade"
         />
 
-    <TextView
-        android:text="teste"
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/LBNomeCidade"
-        android:paddingTop="20dp"
-        android:textSize="14dp"
-        android:id="@+id/LBAutomoveis"
-        />
+        android:id="@+id/listView"
+        android:layout_below="@+id/LBNomeCidade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:choiceMode="singleChoice"
+     />
 
 </RelativeLayout>

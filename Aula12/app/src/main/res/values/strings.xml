@@ -1,15 +1,9 @@
 <resources>
-    <string name="app_name">Aula12</string>
-
-    <string name="hello_world">Alô Mundo!</string>
+    <string name="app_name">Aula11</string>
+    <string name="edit_message">Escreva uma mensagem</string>
+    <string name="button_send">Envie</string>
     <string name="action_settings">Configurações</string>
-    <string name="botaoConsultar">Consultar</string>
-
-    <string-array name="cidades">
-        <item>>Escolha a cidade</item>
-        <item>São Paulo</item>
-        <item>Rio de Janeiro</item>
-        <item>Rio  Branco</item>
-    </string-array>
-    <string name="title_activity_consulta_automovel">ConsultaAutomovel</string>
+    <string name="tittle_activity_main">Atividade Principal</string>
+    <string name="title_activity_display_messageactivity">DisplayMessageactivity</string>
+    <string name="title_activity_display_message">Mostra a Mensagem</string>
 </resources>
